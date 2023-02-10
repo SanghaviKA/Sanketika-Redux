@@ -1,6 +1,3 @@
-// import React from "react";
-// import { Field } from "redux-form";
-// import Text from "../components/text";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
@@ -8,13 +5,6 @@ export const FormComponent = () => {
   const navigate = useNavigate();
 
   const [formValues, setFormValues] = useState({});
-
-  // useEffect(() => {
-  //   const storedValues = localStorage.getItem("formValues");
-  //   if (storedValues) {
-  //     setFormValues(JSON.parse(storedValues));
-  //   }
-  // },[]);
 
   const handleInputChange = (event) => {
     setFormValues({
@@ -25,7 +15,6 @@ export const FormComponent = () => {
 
   const handleReset = () => {
     setFormValues({});
-    // localStorage.removeItem("formValues");
   };
 
   return (
